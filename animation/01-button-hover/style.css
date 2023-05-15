@@ -16,4 +16,14 @@ button {
   font-size: 18px;
   padding: 16px 24px;
   text-align: center;
+  /* all buttons that have a transform trait will  ease in-n-out in 0.4s */
+  transition: transform ease-in-out 0.4s;
+}
+
+button:hover{
+  transform: scale(2);
+}
+/* added a way to space buttons */
+button + button{
+  margin-top: 10px;
 }
